@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My to-do-list app</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>To-do list app</h1>
+      <h3>Write down your list of things to be done</h3>
+      <h5>This app allows you to add, delete, search the tasks</h5>
+    </header>
+    <ul class="list">
+      <li>Task number one<span class='delete'>Delete</span></li>
+      <li>Task number two<span class='delete'>Delete</span></li>
+      <li>Task number three<span class='delete'>Delete</span></li>
+    </ul>
+    <form id='add-task'>
+      <input id='addTask' type='text' class="add-item-to-list" placeholder="Add task">
+      <button>Add</button>
+    </form>
+  </div>
+  <script src='js/app.js'></script>
+</body>
+</html>

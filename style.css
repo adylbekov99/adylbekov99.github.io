@@ -1,0 +1,63 @@
+body {
+  font-family: "Roboto-Regular";
+}
+
+.container  {
+  width: 1200px;
+  margin: 50px auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 50px;
+}
+header{
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+header h1 {
+  font-size: 42px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 35px;
+}
+.list li {
+  font-size: 24px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background:#f9f9f9;
+  border-radius: 5px;
+  align-items: center;
+}
+.list li .delete {
+  background: maroon;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+.list li .delete:hover {
+  background: maroon;
+  cursor: pointer;
+}
+form {
+  margin-top: 30px;
+  text-align: center;
+}
+form input {
+  font-size: 35px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+form button {
+  background: #cccccc;
+  font-size: 35px;
+  color: #000;
+  border-radius: 5px;
+  padding: 12px;
+  margin-left: 20px;
+}
