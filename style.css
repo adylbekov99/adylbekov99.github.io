@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body {
   font-family: "Roboto-Regular";
 }
@@ -8,56 +10,99 @@ body {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   padding: 50px;
 }
-header{
-  text-align: center;
-  border-bottom: 1px solid black;
-}
-header h1 {
-  font-size: 42px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.list {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 35px;
-}
-.list li {
-  font-size: 24px;
-  margin-bottom: 15px;
+
+.container .heading-container {
   display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  background:#f9f9f9;
-  border-radius: 5px;
   align-items: center;
+  margin-bottom: 30px;
 }
-.list li .delete {
-  background: maroon;
-  padding: 15px;
-  border-radius: 5px;
+
+.container h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 55px;
+  margin: 0;
+  margin-right: 20px;
+  color: #d75a4a;
+}
+
+.container article {
+  font-family: "Roboto-Regular";
+  font-style: normal;
+}
+
+#pass-form {
+  margin-bottom: 30px;
+}
+
+
+#pass-form label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#pass-form .input-wrapper {
+  display: flex;
+}
+
+#pass-form input {
+  font-size: 18px;
+  padding: 5px 0;
+  border: 1px solid #000;
+  flex-basis: 0;
+  flex: 1 1 0px;
+  padding-left: 10px;
+}
+
+#pass-form button {
+  border: 1px solid black;
+  font-size: 18px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  flex-basis: 0;
+  flex: 1 1 0px;
+  border-left: none;
+  background: #d75a4a;
+  transition: 0.3s;
   color: #fff;
 }
-.list li .delete:hover {
-  background: maroon;
-  cursor: pointer;
+
+#pass-form button:hover {
+  background: #b44638;
 }
-form {
-  margin-top: 30px;
-  text-align: center;
+
+
+#article-content {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
-form input {
-  font-size: 35px;
-  padding: 10px;
-  border: 1px solid transparent;
-  border-bottom: 2px solid black;
-  outline: none;
+
+#article-content p {
+  font-size: 18px;
 }
-form button {
-  background: #cccccc;
-  font-size: 35px;
-  color: #000;
-  border-radius: 5px;
-  padding: 12px;
-  margin-left: 20px;
+
+#article-content  img {
+  display: block;
+  height: 860px;
+}
+
+.article-active {
+  height: auto !important;
+}
+
+.error {
+  display: none;
+}
+
+.error-active {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: auto;
+    margin: 10px;
+  }
 }
